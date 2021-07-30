@@ -1,13 +1,42 @@
 class Challenges:
 
-    def dayTwoOperators(self, meal_cost, tip_percent, tax_percent):
-        self.meal_cost = float(meal_cost)
-        self.tip_percent = int(tip_percent)
-        self.tax_percent = int(tax_percent)
-        self.total_cost = 0
+    @staticmethod
+    def day_zero_hello_world():
+        phrase = input('Type a phrase: ')
+        print('Hello, World.')
+        print(phrase)
 
-        self.tip_percent = (self.tip_percent / 100) * self.meal_cost
-        self.tax_percent = (self.tax_percent / 100) * self.meal_cost
-        self.total_cost  = self.meal_cost + self.tip_percent + self.tax_percent
+    @staticmethod
+    def day_1_data_types():
+        i = 4
+        d = 4.0
+        s = 'HackerRank'
 
-        return round(self.total_cost)
+        num1 = int(input('Enter a number: ').strip())
+        num2 = int(input('Enter another number: ').strip())
+        phrase = input('Type a phrase: ')
+
+        print(i + num1)
+        print(round(d + num2, 1))
+        print(s, phrase)
+
+    @staticmethod
+    def day_two_operators():
+        meal_cost = float(input('Enter the value of the meal: '))
+        tip_percent = int(input('Enter the value of the tip percent: '))
+        tax_percent = int(input('Enter the value of the tax percent: '))
+
+        tip_percent = (tip_percent / 100) * meal_cost
+        tax_percent = (tax_percent / 100) * meal_cost
+        total_cost = meal_cost + tip_percent + tax_percent
+
+        print(f'Total value of the meal: {round(total_cost)}')
+
+    @staticmethod
+    def day_three_intro_to_condition_statements():
+        num = int(input('Enter a number: ').strip())
+
+        if ((num < 1) or num % 2 != 0) or ((6 <= num <= 20) and num % 2 == 0):
+            print('Weird')
+        else:
+            print('Not Weird')

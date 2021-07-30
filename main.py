@@ -1,8 +1,6 @@
 from challenges import Challenges
 
-challenges = Challenges()
+# To view the challenge response, just call the function
+# Ex: challenges.day_three_intro_to_condition_statements()
 
-# Day 2: Operators
-def solve(meal_cost, tip_percent, tax_percent):
-    print(challenges.dayTwoOperators(meal_cost, tip_percent, tax_percent))
-solve('12.00', '20', '8')
+challenges = Challenges()
