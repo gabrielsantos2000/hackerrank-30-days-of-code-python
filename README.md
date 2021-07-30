@@ -13,7 +13,7 @@ In each file you can see the code inserted in the platform and the other details
 - 2 - In the **main.py** file, the challenges class is imported, which is located in the **challenges.py** file. In the challenges file, for each challenge there is a method for each one of them, and you can visualize it as follows:
 
 >challenges = Challenges()
-challenges.day_0_hello_world()
+>challenges.day_0_hello_world()
 
 After you call the method, you will be able to view the answers to the challenges.
 Após você chamar o método, você poderá visualizar as respostas dos desafios.
