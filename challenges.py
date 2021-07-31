@@ -1,3 +1,6 @@
+from personclass import Person
+
+
 class Challenges:
 
     @staticmethod
@@ -7,7 +10,7 @@ class Challenges:
         print(phrase)
 
     @staticmethod
-    def day_1_data_types():
+    def day_one_data_types():
         i = 4
         d = 4.0
         s = 'HackerRank'
@@ -40,3 +43,13 @@ class Challenges:
             print('Weird')
         else:
             print('Not Weird')
+
+    def day_four_class_vs_instance(self):
+        t = int(input('Enter the amount of times to calculate the age: '))
+        age = int(input())
+        p = Person(age)
+        p.amIOld()
+        for j in range(0, 3):
+            p.yearPasses()
+        p.amIOld()
+        print("")
