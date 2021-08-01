@@ -44,7 +44,8 @@ class Challenges:
         else:
             print('Not Weird')
 
-    def day_four_class_vs_instance(self):
+    @staticmethod
+    def day_four_class_vs_instance():
         t = int(input('Enter the amount of times to calculate the age: '))
         age = int(input())
         p = Person(age)
@@ -53,3 +54,12 @@ class Challenges:
             p.yearPasses()
         p.amIOld()
         print("")
+
+    @staticmethod
+    def day_five_loops():
+        n = int(input().strip())
+
+        if 2 <= n <= 20:
+            for i in range(1, 11):
+                result = n * i
+                print(n, "x", i, "=", result)
