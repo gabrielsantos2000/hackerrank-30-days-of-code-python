@@ -1,6 +1,6 @@
 # Task
-# Given an integer, , print its first  multiples.
-# Each multiple  (where ) should be printed on a new line in the form: n x i = result.
+# Given an integer, n, print its first 10 multiples.
+# Each multiple n (where 1 <= i <= 10) should be printed on a new line in the form: n x i = result.
 
 # Difficulty: Easy
 # Score: 30
