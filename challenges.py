@@ -63,3 +63,21 @@ class Challenges:
             for i in range(1, 11):
                 result = n * i
                 print(n, "x", i, "=", result)
+
+    @staticmethod
+    def day_six_lets_review():
+        t = int(input().strip())
+
+        for i in range(0, t):
+
+            s = list(input().strip())
+            str_pair = ''
+            str_odd = ''
+
+            for j in range(0, len(s)):
+                if j % 2 == 0:
+                    str_pair += s[j]
+                else:
+                    str_odd += s[j]
+            else:
+                print(str_pair, str_odd)
