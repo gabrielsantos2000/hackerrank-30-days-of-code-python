@@ -5,5 +5,3 @@ from challenges import Challenges
 # Ex: challenges.day_three_intro_to_condition_statements()
 
 challenges = Challenges()
-
-challenges.day_six_lets_review()

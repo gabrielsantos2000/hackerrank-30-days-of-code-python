@@ -81,3 +81,14 @@ class Challenges:
                     str_odd += s[j]
             else:
                 print(str_pair, str_odd)
+
+    @staticmethod
+    def day_seven_arrays():
+        n = int(input().strip())
+
+        arr = list(map(int, input().rstrip().split()))
+
+        arr.reverse()
+
+        for i in range(0, n):
+            print(arr[i], end=" ")
