@@ -92,3 +92,25 @@ class Challenges:
 
         for i in range(0, n):
             print(arr[i], end=" ")
+
+    @staticmethod
+    def day_eight_dictionaries_and_maps():
+        n = int(input())
+
+        phone_book = {}
+
+        for i in range(0, n):
+            name, phone = input().split(' ')
+            phone_book[name] = phone
+
+        for i in range(0, n):
+            try:
+                find_name = input()
+
+                if find_name in phone_book:
+                    print(f"{find_name}={phone_book[find_name]}")
+                else:
+                    print('Not found')
+
+            except EOFError:
+                break
